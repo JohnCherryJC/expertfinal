@@ -343,15 +343,14 @@ h1, h2, h3, h4, h5, h6 {
 .reviews_slider {
     display: flex;
     gap: 20px;
-    overflow-x: auto; /* Горизонтальная прокрутка */
-    scroll-snap-type: x mandatory; /* Включение Scroll Snap */
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
     padding: 20px 0;
 }
 
 .review_item {
-    flex: 0 0 300px; /* Ширина одного отзыва */
-    scroll-snap-align: center; /* Привязка элемента к центру при прокрутке */
-    background: #f9f9f9;
+    flex: 0 0 300px; 
+    scroll-snap-align: center; 
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -370,14 +369,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
 
-/* Стили для скрытия горизонтального скроллбара (по желанию) */
+
 .reviews_slider::-webkit-scrollbar {
     display: none;
 }
 
 .reviews_slider {
-    -ms-overflow-style: none; /* IE и Edge */
-    scrollbar-width: none;   /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;   
 }
 /* Отзывы */
 .review_item {
@@ -390,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
     scroll-snap-align: center;
     position: relative;
 
-    /* Добавляем плавность */
+   
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -403,9 +402,9 @@ h1, h2, h3, h4, h5, h6 {
 .review_avatar {
     width: 60px;
     height: 60px;
-    border-radius: 70%; /* Делаем аватарки круглыми */
+    border-radius: 70%; 
     margin-bottom: 15px;
-    object-fit: cover; /* Убеждаемся, что изображение заполнит круг */
+    object-fit: cover; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -492,8 +491,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact_icon_img {
-    width: 50px; /* Размер иконки */
-    height: 50px; /* Размер иконки */
+    width: 50px; 
+    height: 50px; 
     margin-bottom: 10px;
     transition: transform 0.3s ease;
 }
@@ -508,7 +507,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact_icon:hover .contact_icon_img {
-    transform: scale(1.1); /* Увеличение иконки при наведении */
+    transform: scale(1.1); 
 }
 
 .contact_icon span:hover {
@@ -523,11 +522,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%; /* Ширина формы на всю страницу */
-    max-width: 100%; /* Убираем максимальную ширину */
+    width: 100%; 
+    max-width: 100%; 
     margin: 0 auto;
-    padding: 20px; /* Добавляем отступы для улучшения внешнего вида */
-    box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+    padding: 20px;
+    box-sizing: border-box; 
 }
 
 .form-group {
@@ -916,442 +915,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Мобильные устройства */
-@media (max-width: 768px) {
-    /* Контейнер */
-    .container {
-        width: 90%;
-    }
-
-    /* Заголовки */
-    .intro_title {
-        font-size: 80px;
-    }
-
-    .intro_suptitle {
-        font-size: 48px;
-    }
-
-    /* Хедер */
-    .header_inner {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav {
-        font-size: 12px;
-    }
-
-    .nav_link {
-        margin: 0 5px;
-    }
-
-    /* Слайдер */
-    .slider_item {
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    /* Секция */
-    .section {
-        padding: 40px 0;
-    }
-
-    .section_title {
-        font-size: 24px;
-    }
-
-    .about {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about_item {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .about_item_i {
-        width: 100%;
-    }
-
-    /* Форма */
-    .contact-form {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        padding: 12px;
-    }
-
-    .contact-form .btn {
-        padding: 10px;
-    }
-
-    .footer {
-        font-size: 12px;
-        padding: 20px 10px;
-    }
-
-    .footer .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer_inner {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer_logo {
-        margin-bottom: 20px;
-    }
-
-    .footer_links,
-    .footer_contact,
-    .footer_socials {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .footer_links ul {
-        padding: 0;
-    }
-
-    .footer_links ul li {
-        margin-bottom: 10px;
-    }
-
-    .footer_socials .social_icons {
-        justify-content: center;
-    }
-}
-
-/* Ноутбуки */
-@media (max-width: 1024px) {
-    .container {
-        width: 85%;
-    }
-
-    .intro_title {
-        font-size: 120px;
-    }
-
-    .intro_suptitle {
-        font-size: 60px;
-    }
-
-    .header_inner {
-        flex-direction: row;
-    }
-
-    .nav {
-        font-size: 14px;
-    }
-
-    .slider_item {
-        width: 30%;
-    }
-
-    .about_item {
-        width: 45%;
-        margin-bottom: 20px;
-    }
-
-    .about_item_i {
-        width: 48%;
-    }
-
-    .footer {
-        font-size: 14px;
-    }
-
-    .footer .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .footer_inner {
-        flex-direction: row;
-    }
-
-    .footer_logo {
-        margin-bottom: 0;
-    }
-
-    .footer_links,
-    .footer_contact,
-    .footer_socials {
-        padding-left: 20px;
-    }
-
-    .footer_links ul {
-        padding: 0;
-    }
-
-    .footer_links ul li {
-        margin-bottom: 10px;
-    }
-
-    .footer_socials .social_icons {
-        gap: 15px;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    .navbar .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar .nav_links {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .navbar .nav_links a {
-        font-size: 20px;
-    }
-}
-
-
-/* Мобильные устройства */
-@media (max-width: 768px) {
-    /* Контейнер */
-    .container {
-        width: 90%;
-    }
-
-    /* Заголовки */
-    .intro_title {
-        font-size: 10vw; /* Размер шрифта будет зависеть от ширины экрана */
-        margin-left: 5vw; /* Сдвигаем текст влево */
-    }
-
-    .intro_suptitle {
-        font-size: 6vw; 
-        margin-left: 5vw;
-    }
-
-    /* Хедер */
-    .header_inner {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav {
-        font-size: 12px;
-    }
-
-    .nav_link {
-        margin: 0 5px;
-    }
-
-    /* Слайдер */
-    .slider_item {
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    /* Секция */
-    .section {
-        padding: 40px 0;
-    }
-
-    .section_title {
-        font-size: 24px;
-    }
-
-    .about {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about_item {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .about_item_i {
-        width: 100%;
-    }
-
-    /* Форма */
-    .contact-form {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        padding: 12px;
-    }
-
-    .contact-form .btn {
-        padding: 10px;
-    }
-
-    .footer {
-        font-size: 12px;
-        padding: 20px 10px;
-    }
-
-    .footer .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer_inner {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer_logo {
-        margin-bottom: 20px;
-    }
-
-    .footer_links,
-    .footer_contact,
-    .footer_socials {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .footer_links ul {
-        padding: 0;
-    }
-
-    .footer_links ul li {
-        margin-bottom: 10px;
-    }
-
-    .footer_socials .social_icons {
-        justify-content: center;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-    /* Контейнеры */
-    .container {
-        max-width: 1100px;
-        padding: 0 30px;
-    }
-
-    /* Заголовки */
-    h1 {
-        font-size: 3rem; /* Увеличение размера заголовков */
-    }
-
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-        line-height: 1.8;
-    }
-
-    /* Навигация */
-    .nav {
-        font-size: 1.1rem;
-        gap: 15px; /* Увеличение расстояния между пунктами */
-    }
-
-    .nav_link {
-        padding: 10px 15px;
-    }
-
-    /* Изображения */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Секции */
-    .section {
-        padding: 40px 0;
-    }
-
-    .section_title {
-        font-size: 2.5rem;
-        text-align: left; /* Сдвиг заголовков влево */
-    }
-
-    .section_content {
-        font-size: 1.2rem;
-        text-align: justify;
-    }
-
-    /* Карточки */
-    .card {
-        display: flex; /* Карточки выстраиваются в ряд */
-        flex-direction: row;
-        gap: 20px;
-        margin-bottom: 30px;
-    }
-
-    .card img {
-        width: 40%;
-    }
-
-    .card_title {
-        font-size: 1.5rem;
-    }
-
-    .card_text {
-        font-size: 1.1rem;
-    }
-
-    /* Форма */
-    .form-group {
-        margin-bottom: 25px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        width: 100%;
-        padding: 15px;
-        font-size: 1.1rem;
-    }
-
-    .form-group button {
-        padding: 15px 20px;
-        font-size: 1.2rem;
-    }
-
-    /* Футер */
-    .footer {
-        padding: 30px;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .footer_links {
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    .footer_links a {
-        font-size: 1.1rem;
-    }
-
-    .footer_socials {
-        margin-top: 15px;
-    }
-
-    .footer_socials a {
-        font-size: 1.2rem;
-        margin: 0 10px;
-    }
-}
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
@@ -1452,29 +1015,59 @@ body {
         font-size: 4.5vw;
     }
 
-    /* Футер */
+
+}
+
+
+
+/* Адаптация для очень маленьких экранов (до 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6.5vw;
+    }
+
+    h3 {
+        font-size: 5.5vw;
+    }
+
+    p {
+        font-size: 4.5vw;
+    }
+
+    .nav {
+        font-size: 4vw;
+    }
+
+    .form-group button {
+        font-size: 5vw;
+    }
+
     .footer {
-        padding: 20px;
-        font-size: 3.5vw;
-        text-align: center;
-    }
-
-    .footer_links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer_links a {
         font-size: 4vw;
     }
 
-    .footer_socials {
-        margin-top: 10px;
-    }
-
+    .footer_links a,
     .footer_socials a {
-        font-size: 4vw;
-        margin: 0 5px;
+        font-size: 4.5vw;
+    }
+}
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav_links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar .nav_links a {
+        font-size: 20px;
     }
 }
 
